@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..600&family=Inter:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas-white text-midnight-ink font-inter antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-violet-sparkle {
+    background-image: radial-gradient(circle at 0px -50%, rgba(255, 255, 255, 0) 15%, rgba(152, 26, 249, 0.4) 38%, rgba(255, 255, 255, 0) 65%);
+  }
+  .gradient-pink-sparkle {
+    background-image: linear-gradient(214deg, rgba(255, 255, 255, 0), rgba(252, 52, 255, 0.3) 25%, rgba(255, 255, 255, 0) 71%);
+  }
+  .gradient-magenta-flash {
+    background-image: linear-gradient(212deg, rgba(255, 255, 255, 0) 51%, rgba(145, 27, 255, 0.2) 64%, rgba(255, 255, 255, 0) 80%);
+  }
+  .gradient-orange-flare {
+    background-image: radial-gradient(circle at 0px -50%, rgba(255, 255, 255, 0) 15%, rgba(249, 167, 26, 0.4) 38%, rgba(255, 255, 255, 0) 65%);
+  }
+  .gradient-rose-blush {
+    background-image: linear-gradient(214deg, rgba(255, 255, 255, 0), rgba(255, 52, 143, 0.3) 25%, rgba(255, 255, 255, 0) 71%);
+  }
+  .gradient-golden-glow {
+    background-image: linear-gradient(212deg, rgba(255, 255, 255, 0) 51%, rgba(255, 209, 27, 0.2) 64%, rgba(255, 255, 255, 0) 80%);
+  }
+}
